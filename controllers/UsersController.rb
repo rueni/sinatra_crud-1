@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     new_user.is_admin = false
     new_user.save
 
-    session[:current_user] = user
+    session[:current_user] = new_user
 
     erb :users_register_confirmation
 
